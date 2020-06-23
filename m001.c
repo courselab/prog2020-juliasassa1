@@ -17,14 +17,29 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
 #define USAGE "m001 <num1> <num2> <num3>\n"
 
 /* Return the greatest among a, b and c. */
 
+
 int greatest (int a, int b, int c)
-{
-  return a;
+{ 
+  if (a>b && a>c)
+  {
+    return a;
+  }
+  else 
+  {
+  if (b>a && b>c)
+    {
+      return b;
+    }
+  else(c>b && c>a)
+    {
+      return c; 
+    }
+  }
+  
 }
 
 /* Do not edit this function. */
