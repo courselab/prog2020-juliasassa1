@@ -24,20 +24,18 @@
 
 int greatest (int a, int b, int c)
 { 
-  int z;
-  if ((a>b )&& (a>c))
-  z=a;
-  else 
-  
-  if (b>c)
-   z=b;
-    
-  else (c>b)
-   z=c;
-
-  return z ;
+  int m;
+  m=a;
+  if (b>=m)
+  {
+    m=b;
+  }
+  if (c>=m)
+  {
+    m=c;
+  }
+  return m;
 }
-
 /* Do not edit this function. */
 
 int main (int argc, char **argv)
