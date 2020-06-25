@@ -27,8 +27,11 @@
    and store the result in vector 'c'. */
 
 void crossprod (int a[3], int b[3], int c[3])
-{
-}
+ {
+   c[0]=((a[1]*b[2])-(a[2]*b[1]));
+   c[1]=((a[2]*b[0])-(a[0]*b[2]));
+   c[2]=((a[0]*b[2])-(a[2]*b[0]));
+ }
 
 
 
