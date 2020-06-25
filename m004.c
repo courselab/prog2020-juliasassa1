@@ -28,9 +28,19 @@
    into 110); an empty string means zero. */
 
 int decimal (char *b)
-{
+{ int cont=0;
+  int auxiliar=1;
+  int i,tamanho;
+  tamanho = strlen (b);
+
+  for (i= tamanho - 1 ; i>=0 ; i--)
+  { if (b[i] == '1')
+      { cont = cont  + 1*auxiliar ;
+      }
+      auxiliar=auxiliar*2;
+  }
   
-  return 0;
+  return cont;
 }
 
 #define USAGE "m004 <string>\n"
