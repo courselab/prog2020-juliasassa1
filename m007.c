@@ -28,7 +28,20 @@
 
 int lettercount (char *s)
 {
-  return 0;
+  int x ; x = 0;
+  int cont ; cont = 0;
+
+  while ( s[x]  != 0 )
+   {
+    if (s[x] >= 'a' && s[x] <= 'z')
+     cont ++ ;
+    
+    if (s[x] >= 'A' && s[x]<= 'Z')
+    cont ++ ;
+
+    x++;
+   }
+  return cont ;
 }
 
 
