@@ -29,9 +29,9 @@ int aux, i, j;
 aux=1;
 while(aux<n)
  {
-   j= vetor [i];
+   j= vetor [aux];
    i= aux -1;
-   while (i>=0 && vetor [i]> j)
+   while ((i>=0) && (vetor [i]> j))
    {
      vetor [i+1] = vetor [i];
      i= i-1;
