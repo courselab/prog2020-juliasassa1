@@ -23,8 +23,22 @@
 
 /* Sort the first 'n' integers values in 'vector'. */
 
-void sort (int* vector, int n)
+void sort (int* vetor, int n)
 {
+int aux, i, j;
+aux=1;
+while(aux<n)
+ {
+   j= vetor [i];
+   i= aux -1;
+   while (i>=0 && vetor [i]> j)
+   {
+     vetor [i+1] = vetor [i];
+     i= i-1;
+   }
+  vetor [i +1] = j ;
+  aux= aux + 1;
+ }
 }
 
 #define USAGE "m009 <num1> <nun2> ... \n"
