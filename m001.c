@@ -17,16 +17,25 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
 #define USAGE "m001 <num1> <num2> <num3>\n"
 
 /* Return the greatest among a, b and c. */
 
-int greatest (int a, int b, int c)
-{
-  return a;
-}
 
+int greatest (int a, int b, int c)
+{ 
+  int m;
+  m=a;
+  if (b>=m)
+  {
+    m=b;
+  }
+  if (c>=m)
+  {
+    m=c;
+  }
+  return m;
+}
 /* Do not edit this function. */
 
 int main (int argc, char **argv)

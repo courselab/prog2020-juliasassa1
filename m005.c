@@ -8,9 +8,7 @@
    E.g.
 
       command line    : m005
-      standard input  : 1 2 3
-                        2 1 3
-                        3 2 1
+      standard input  :
       expected output : 12
 
    Directions:
@@ -23,11 +21,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* Return the determinant of a 3x3 integer matrix.*/
 
 int determinant (int m[3][3])
-{
-  return 0;
+{ int a,b,c;
+  int d,e,f;
+  int T;
+a=(m[0][0]*m[1][1]*m[2][2]);
+b=(m[0][1]*m[1][2]*m[2][0]);
+c=(m[0][2]*m[1][0]*m[2][1]);
+
+d=(m[0][1]*m[1][0]*m[2][2]);
+e=(m[0][0]*m[1][2]*m[2][1]);
+f=(m[0][2]*m[1][1]*m[2][0]);
+
+T=(a+b+c)-(d+e+f);
+  return T;
 }
 
 
